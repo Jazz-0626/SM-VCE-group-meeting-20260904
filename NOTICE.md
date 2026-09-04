@@ -1,5 +1,5 @@
-# Notice
+# 说明
 
-The MATLAB SM-VCE implementation is attributed to Liu Jihong. The Python port and case-specific workflow are shared for research discussion and reproducibility within the group.
+MATLAB SM-VCE 实现归属于刘计洪等原作者。Python 移植版及震例适配流程用于科研交流和可复现性讨论。
 
-No raw observations or derived result products are distributed through this repository. Users are responsible for obtaining and using input data under the applicable licenses and permissions.
+本仓库公开开放获取文献和派生运行结果，但不公开原始观测数据，也不公开由原始观测重新打包得到的 `DATA*.mat`。使用者应按照对应许可和授权自行获取、使用输入数据，并在科研成果中正确引用原始论文和软件作者。
