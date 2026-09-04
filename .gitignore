@@ -1,0 +1,62 @@
+# Raw InSAR / ancillary data
+**/SMVCE_DATA/
+**/DATA/
+**/data/
+**/raw_data/
+**/input_data/
+*.tif
+*.tiff
+*.grd
+*.nc
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.bin
+*.disp
+*.azi
+*.inc
+*.dem
+*.par
+*.xy
+
+# MATLAB binary data, except the two colormaps required by the code
+*.mat
+!matlab/SMVCE_code/cmap_BlueGreenBrown.mat
+!matlab/SMVCE_code/cmap_BlueWhiteOrangeRed.mat
+
+# Generated results, figures and intermediate tables
+**/Result*/
+**/result*/
+**/results/
+**/output*/
+**/outputs/
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.csv
+*.tsv
+*.log
+
+# Keep only the final presentation
+*.ppt
+*.pptx
+*.pptm
+!presentation/SM-VCE_今日组会_整景结果版_20260904_v10.pptx
+
+# Python / MATLAB / OS caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.asv
+*.m~
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.codex-finalizer*/
+~$*
+
