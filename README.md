@@ -1,23 +1,23 @@
 # SM-VCE group meeting materials
 
-This repository contains the code and final slide deck used for the SM-VCE group meeting on 2026-09-04.
+This is the Git repository rooted at the local `2026.09.04 今日组会` working directory. Only the public release subset is tracked.
 
-## Contents
+## Tracked contents
 
-- `matlab/`: Liu Jihong's MATLAB SM-VCE implementation and the group-meeting runner.
-- `python/`: Python port and utilities used for the earthquake-case workflow.
-- `presentation/`: the final 33-slide presentation with full-scene results.
+- `02_MATLAB原版/`: Liu Jihong's MATLAB SM-VCE implementation and the group-meeting runner.
+- `03_Python版/`: the Python port and utilities used for the earthquake-case workflow.
+- `05_PPT/SM-VCE_今日组会_整景结果版_20260904_v10.pptx`: the final 33-slide presentation.
 
-## Data policy
+## Excluded contents
 
-Raw InSAR observations, ancillary rasters, fault files, generated grids, numerical results, figures, caches, and local environments are intentionally excluded. The repository therefore cannot reproduce the case-study figures without separately supplied data.
+Raw InSAR observations, ancillary rasters, fault files, generated grids, numerical results, figures, papers, the local presentation script, virtual environments, caches, and build artifacts are intentionally excluded by `.gitignore`.
 
-Place local input files in an ignored `SMVCE_DATA/` directory, or point the Python program to a local data directory. Do not commit those files.
+The repository therefore cannot reproduce the case-study figures without separately supplied data. Place local inputs in an ignored `SMVCE_DATA/` directory and do not commit them.
 
 ## Python quick start
 
 ```powershell
-cd python
+cd '03_Python版\smvce_tjz'
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -25,13 +25,13 @@ python smvce_main.py --help
 python smvce_main.py --data-dir D:\path\to\SMVCE_DATA --windowsize 41
 ```
 
-The `--preliminary-gpu-no-fault-separation` option is only for fast full-scene preview. It disables cross-fault neighborhood removal and must not be treated as the strict reference solution.
+The `--preliminary-gpu-no-fault-separation` option is only a fast full-scene preview. It disables cross-fault neighborhood removal and is not the strict reference solution.
 
 ## MATLAB quick start
 
-Add `matlab/SMVCE_code/` and, when needed on newer MATLAB versions, `matlab/compatibility/` to the MATLAB path. Prepare a local `matlab/SMVCE_DATA/` folder and run `SMVCE_main.m`. The data directory is ignored by Git.
+Enter `02_MATLAB原版/SMVCE_MATLAB_原版`, add `SMVCE_code/` to the MATLAB path, prepare a local `SMVCE_DATA/` directory, and run `SMVCE_main.m`. The wrapper `02_MATLAB原版/run_groupmeeting_experiment.m` writes experiments outside the original source directory.
 
-## Scope and attribution
+## Scope
 
-The MATLAB implementation is the original version supplied by Liu Jihong. The Python version includes case-specific adaptations used in the presentation. No general-purpose parameter set is implied; window size, fault geometry, missing-data pattern, and stripe noise should be tuned for each earthquake case.
+The MATLAB implementation is the original version supplied by Liu Jihong. The Python version includes case-specific adaptations used in the presentation. Window size, fault geometry, missing-data pattern, and stripe noise must be reconsidered for every earthquake case.
 

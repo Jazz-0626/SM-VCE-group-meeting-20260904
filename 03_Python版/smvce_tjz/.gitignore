@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# 输入数据与反演结果（大文件，不入库）
+SMVCE_DATA*/
+Result_SMVCE_*/
+Comparison_*/
+raw_renamed_*/
+
+# 运行产物
+*.png
+*.pdf
+*.log
+*.grd
+gmt.history
+Aftershocks.txt
+
+# IDE
+.idea/
+.vscode/

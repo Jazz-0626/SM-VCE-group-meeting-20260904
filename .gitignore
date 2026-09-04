@@ -1,4 +1,13 @@
-# Raw InSAR / ancillary data
+# Track only the public release subset from this working directory.
+/*
+!/.gitignore
+!/README.md
+!/NOTICE.md
+!/02_MATLAB原版/
+!/03_Python版/
+!/05_PPT/
+
+# Raw observations and ancillary data
 **/SMVCE_DATA/
 **/DATA/
 **/data/
@@ -20,12 +29,12 @@
 *.par
 *.xy
 
-# MATLAB binary data, except the two colormaps required by the code
+# MATLAB binary data, except colormaps required by the solver
 *.mat
-!matlab/SMVCE_code/cmap_BlueGreenBrown.mat
-!matlab/SMVCE_code/cmap_BlueWhiteOrangeRed.mat
+!/02_MATLAB原版/SMVCE_MATLAB_原版/SMVCE_code/cmap_BlueGreenBrown.mat
+!/02_MATLAB原版/SMVCE_MATLAB_原版/SMVCE_code/cmap_BlueWhiteOrangeRed.mat
 
-# Generated results, figures and intermediate tables
+# Generated results, figures and tables
 **/Result*/
 **/result*/
 **/results/
@@ -34,22 +43,30 @@
 *.png
 *.jpg
 *.jpeg
-*.tif
-*.tiff
 *.csv
 *.tsv
 *.log
 
 # Keep only the final presentation
+/05_PPT/*
+!/05_PPT/SM-VCE_今日组会_整景结果版_20260904_v10.pptx
 *.ppt
 *.pptx
 *.pptm
-!presentation/SM-VCE_今日组会_整景结果版_20260904_v10.pptx
+!/05_PPT/SM-VCE_今日组会_整景结果版_20260904_v10.pptx
 
-# Python / MATLAB / OS caches
-.venv/
-venv/
-__pycache__/
+# Documents and local-only materials
+*.pdf
+/01_文献/
+/04_运行结果/
+/06_讲稿与说明/
+/07_GitHub发布/
+
+# Environments, repository metadata and caches
+**/.git/
+**/.venv/
+**/venv/
+**/__pycache__/
 *.py[cod]
 *.asv
 *.m~
