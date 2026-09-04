@@ -1,0 +1,20 @@
+{
+  "data_dir": "E:\\#Post\\今日组会\\02_MATLAB原版\\SMVCE_MATLAB_原版\\SMVCE_DATA",
+  "windowsize": 41,
+  "excluded_observations_1based": [
+    3,
+    6
+  ],
+  "fsmpara": 2,
+  "use_cuda_requested": false,
+  "ns_output_clip_m": null,
+  "figure_erode_pixels": 0,
+  "write_grd": false,
+  "run_wls": false,
+  "roi_1based_inclusive": [
+    390,
+    450,
+    650,
+    750
+  ]
+}

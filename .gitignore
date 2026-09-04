@@ -1,6 +1,7 @@
 # Track only the public release subset from this working directory.
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/NOTICE.md
 !/02_MATLAB原版/
@@ -57,8 +58,6 @@
 
 # Documents and local-only materials
 *.pdf
-/01_文献/
-/04_运行结果/
 /06_讲稿与说明/
 /07_GitHub发布/
 
@@ -77,3 +76,13 @@ Thumbs.db
 .codex-finalizer*/
 ~$*
 
+# Publish literature and derived results. These exceptions intentionally come
+# last so they override the generic PDF/image/result rules above.
+!/01_文献/
+!/01_文献/**
+!/04_运行结果/
+!/04_运行结果/**
+
+# DATA_*.mat files are packaged copies of the original observations, not
+# derived products. Keep them local even though the result folders are public.
+/04_运行结果/**/DATA*.mat

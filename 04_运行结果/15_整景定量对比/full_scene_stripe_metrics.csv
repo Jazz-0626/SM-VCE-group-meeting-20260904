@@ -1,0 +1,16 @@
+﻿comparison,component,median_abs_dx_m,median_abs_dy_m,anisotropy_ratio,dominant_direction
+Python_preview_vs_MATLAB_original7,E-W,1.778078004277539e-09,1.7767249511912997e-09,1.0007615433583752,vertical stripes
+Python_preview_vs_MATLAB_original7,N-S,1.627499333217708e-09,1.6311472832153395e-09,1.0022414448492702,horizontal stripes
+Python_preview_vs_MATLAB_original7,Vertical,2.98246238469857e-10,2.9608799873709346e-10,1.0072891834250934,vertical stripes
+Python_preview_vs_MATLAB_all9,E-W,1.7749481572015835e-09,1.7743742100617688e-09,1.0003234645412225,vertical stripes
+Python_preview_vs_MATLAB_all9,N-S,1.3886808300500597e-09,1.3868255831911425e-09,1.001337765095628,vertical stripes
+Python_preview_vs_MATLAB_all9,Vertical,2.4587761254107887e-10,2.4416428080764607e-10,1.0070171268613306,vertical stripes
+MATLAB_all9_vs_original7,E-W,0.00029516433524397374,0.0002803892120148421,1.05269504886782,vertical stripes
+MATLAB_all9_vs_original7,N-S,0.0010644723171466773,0.0010471059054004278,1.0165851530935721,vertical stripes
+MATLAB_all9_vs_original7,Vertical,0.0002948116252340701,0.00027974044077245727,1.0538756013252721,vertical stripes
+Python_preview_all9_vs_original7,E-W,0.0002912404015660286,0.00027719512581825256,1.05066927387816,vertical stripes
+Python_preview_all9_vs_original7,N-S,0.0010436667362228036,0.0010299775749444962,1.013290737207599,vertical stripes
+Python_preview_all9_vs_original7,Vertical,0.00029067881405353546,0.00027628010138869286,1.052116357973191,vertical stripes
+Python_tuned_vs_preview_all9,E-W,0.0,0.0,0.0,vertical stripes
+Python_tuned_vs_preview_all9,N-S,0.0,0.0,0.0,vertical stripes
+Python_tuned_vs_preview_all9,Vertical,0.0,0.0,0.0,vertical stripes

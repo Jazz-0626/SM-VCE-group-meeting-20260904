@@ -6,11 +6,13 @@ This is the Git repository rooted at the local `2026.09.04 今日组会` working
 
 - `02_MATLAB原版/`: Liu Jihong's MATLAB SM-VCE implementation and the group-meeting runner.
 - `03_Python版/`: the Python port and utilities used for the earthquake-case workflow.
+- `01_文献/`: the reference papers and bibliography used in the presentation.
+- `04_运行结果/`: ROI checks, full-scene MATLAB results, Python GPU previews, figures, grids, and quantitative comparisons.
 - `05_PPT/SM-VCE_今日组会_整景结果版_20260904_v10.pptx`: the final 33-slide presentation.
 
 ## Excluded contents
 
-Raw InSAR observations, ancillary rasters, fault files, generated grids, numerical results, figures, papers, the local presentation script, virtual environments, caches, and build artifacts are intentionally excluded by `.gitignore`.
+Raw InSAR observations, their packaged `DATA_*.mat` copies, the local presentation script, virtual environments, caches, and build artifacts are intentionally excluded by `.gitignore`. Literature and derived result products are published. Large binary results use Git LFS.
 
 The repository therefore cannot reproduce the case-study figures without separately supplied data. Place local inputs in an ignored `SMVCE_DATA/` directory and do not commit them.
 
@@ -34,4 +36,3 @@ Enter `02_MATLAB原版/SMVCE_MATLAB_原版`, add `SMVCE_code/` to the MATLAB pat
 ## Scope
 
 The MATLAB implementation is the original version supplied by Liu Jihong. The Python version includes case-specific adaptations used in the presentation. Window size, fault geometry, missing-data pattern, and stripe noise must be reconsidered for every earthquake case.
-

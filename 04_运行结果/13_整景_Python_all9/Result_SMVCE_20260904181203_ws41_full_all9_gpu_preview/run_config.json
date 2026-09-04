@@ -1,0 +1,14 @@
+{
+  "data_dir": "E:\\#Post\\2026.09.04 今日组会\\02_MATLAB原版\\SMVCE_MATLAB_原版\\SMVCE_DATA",
+  "windowsize": 41,
+  "excluded_observations_1based": [],
+  "fsmpara": 2,
+  "use_cuda_requested": true,
+  "cuda_rows_per_batch": 4,
+  "preliminary_gpu_no_fault_separation": true,
+  "ns_output_clip_m": null,
+  "figure_erode_pixels": 0,
+  "write_grd": false,
+  "run_wls": false,
+  "roi_1based_inclusive": null
+}

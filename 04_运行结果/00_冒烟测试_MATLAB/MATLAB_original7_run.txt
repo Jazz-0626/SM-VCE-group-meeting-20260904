@@ -1,0 +1,10 @@
+implementation=MATLAB original functions
+observation_mode=original7
+excluded_observations=[3 6]
+windowsize=41
+fsmpara=2
+roi=[390 450 650 750]
+rows=61
+cols=101
+observations=7
+elapsed_seconds=33.670245
